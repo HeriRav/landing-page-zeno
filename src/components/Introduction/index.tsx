@@ -9,7 +9,7 @@ const About = () => {
       <div className="text-body text-5xl text-black font-bold text-center">
         <p className="main-text mb-8">Donnez vie à vos idées grâce à notre <a className="text-primary font-bold">savoir-faire</a> en <a className="text-primary font-bold">solutions digitales</a></p>
         <p className="second-text text-lg font-normal mb-0">ZENO est une ESN qui transforme vos idées en solutions digitales performantes.</p>
-        <a className="text-sm text-black bg-secondary px-6 py-3 rounded-full hover:bg-yellow-300 transition delay-50 duration-200">
+        <a className="text-sm cursor-pointer text-black bg-secondary px-6 py-3 rounded-full hover:bg-yellow-300 transition delay-50 duration-200">
           <Link to="/">Contactez nous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ArrowForwardIcon fontSize="inherit" /></Link>
         </a>
       </div>
