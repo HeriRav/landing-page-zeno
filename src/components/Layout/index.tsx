@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 import Header from "../Header"
 import "./index.css"
@@ -22,29 +23,29 @@ const Layout = ({ children }: LayoutProps) => {
 
 return (
     <>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div
-            style={{
-            // margin: `0 auto`,
-            // maxWidth: `var(--size-content)`,
-            // padding: `var(--size-gutter)`,
-            marginTop: '30px',
-            }}
-        >
-            <main>{children}</main>
-            <footer
-            className="text-black"
-            style={{
-                marginTop: `var(--space-5)`,
-                fontSize: `var(--font-sm)`,
-                textAlign: 'center'
-            }}
-            >
-            © {new Date().getFullYear()} &middot; Built with
-            {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a>
-            </footer>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <div
+          style={{
+          marginTop: '30px',
+          }}
+      >
+        <main>{children}</main>
+        <div className="absolute cursor-pointer">
+          <ArrowCircleUpIcon />
         </div>
+        <footer
+        className="text-black"
+        style={{
+            marginTop: `var(--space-5)`,
+            fontSize: `var(--font-sm)`,
+            textAlign: 'center'
+        }}
+        >
+        © {new Date().getFullYear()} &middot; Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
+      </div>
     </>
 )
 }
