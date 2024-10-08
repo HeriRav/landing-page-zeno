@@ -30,7 +30,7 @@ return (
           }}
       >
         <main>{children}</main>
-        <div className="absolute cursor-pointer">
+        <div className="sticky cursor-pointer w-80">
           <ArrowCircleUpIcon />
         </div>
         <footer

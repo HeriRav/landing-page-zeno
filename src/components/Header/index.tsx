@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             </a>
           </div>
           <div className="ml-auto mr-20">
-            <a className="text-sm text-white cursor-pointer bg-primary px-4 py-2 rounded-full hover:bg-purple-600 transition delay-50 duration-200">
+            <a className="text-sm text-white cursor-pointer bg-primary px-4 py-3 rounded-full hover:bg-purple-600 transition delay-50 duration-200">
               <Link to="/">Contactez nous</Link>
             </a>
           </div>

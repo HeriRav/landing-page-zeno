@@ -76,7 +76,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <a className="flex justify-center mt-10 w-56 mx-auto text-base cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-12 md:py-4 rounded-full hover:bg-yellow-300 transition delay-50 duration-200">
+            <a className="flex justify-center mt-10 w-56 mx-auto text-xl cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-8 md:py-4 rounded-full hover:bg-yellow-300 transition delay-50 duration-200">
                 <Link to="/">Contactez nous</Link>
             </a>
         </main>

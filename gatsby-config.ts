@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-react-helmet`, {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/iconz.png"
+      "icon": "src/images/icon-zeno.png"
     }
   }, "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
