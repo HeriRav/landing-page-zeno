@@ -5,6 +5,7 @@ import Introduction from "../components/Introduction"
 import About from "../components/About"
 import Service from "../components/Service"
 import Testimony from "../components/Testimony"
+import Contact from "../components/Contact"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <About />
       <Service />
       <Testimony />
+      <Contact />
     </Layout>
   )
 }
