@@ -5,11 +5,11 @@ import "./index.css"
 
 const Contact = () => {
     return (
-        <main className='bg-gray-200 mt-20'>
+        <main id='contact' className='bg-gray-200 mt-20 scroll-mt-20'>
             <div className='flex flex-col md:grid md:grid-cols-1'>
                 <div className='p-10'>
-                    <div className='absolute bg-secondary text-white font-bold text-5xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-right right-0 top-0 w-[1000px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1200px] h-full background'>
-                        <span className='flex flex-col mt-36 text-right right-0 mr-32 2xl:mr-36'>Un projet ?</span>
+                    <div className='p-10 absolute bg-secondary text-white font-bold text-5xl md:text-5xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-right right-0 top-0 w-[1000px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1200px] h-full background'>
+                        <span className='flex flex-col mt-28 text-right right-0 mr-32 2xl:mr-36'>Un projet ?</span>
                         <span className='flex flex-col text-right right-0 mr-32 2xl:mr-36'>Nous vous aidons</span>
                     </div>
                     <form className="max-w-xl lg:max-w-md xl:max-w-lg 2xl:max-w-xl mr-auto mx-auto lg:ml-0 xl:ml-0 2xl:ml-36">

@@ -1,10 +1,10 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "../Header"
 import "./index.css"
 import '../../styles/global.css'
+import Footer from "../Footer";
 
 interface LayoutProps {
   children: React.ReactNode
@@ -30,20 +30,8 @@ return (
           }}
       >
         <main>{children}</main>
-        <div className="sticky cursor-pointer w-80">
-          <ArrowCircleUpIcon />
-        </div>
-        <footer
-        className="text-black"
-        style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-            textAlign: 'center'
-        }}
-        >
-        © {new Date().getFullYear()} &middot; Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer>
+          <Footer />
         </footer>
       </div>
     </>
