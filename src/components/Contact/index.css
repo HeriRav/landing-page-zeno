@@ -3,9 +3,37 @@
     z-index: 9;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1121px) {
     .background {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .background {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
         z-index: -1;
     }
+}
+
+@media screen and (max-width: 1700px) {
+    .background {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .bg-image {
+        margin-right: 560px;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-text {
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
