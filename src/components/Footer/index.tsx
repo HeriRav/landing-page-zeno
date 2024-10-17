@@ -11,7 +11,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
     return (
-        <main>
+        <main data-aos="fade-in">
             <div className="grid grid-cols-2 py-10">
                 <Link to="/">
                 <StaticImage
@@ -51,10 +51,10 @@ const Footer = () => {
                     </span>
                 </div>
                 <div className="text-right md:mr-16 xl:mr-20 space-x-4">
-                    <FacebookOutlined />
-                    <Instagram />
-                    <X />
-                    <LinkedIn />
+                    <a href="" target="_blank"><FacebookOutlined /></a>
+                    <a href="" target="_blank"><Instagram /></a>
+                    <a href="" target="_blank"><X /></a>
+                    <a href="https://www.linkedin.com/company/zeno-innovation/" target="_blank"><LinkedIn /></a>
                 </div>
             </div>
         </main>

@@ -29,6 +29,9 @@
     --size-gutter: var(--space-5);
     --size-gap: var(--space-6);
 }
+/* * {
+    outline: 1px solid red;
+} */
 html {
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
@@ -48,6 +51,8 @@ body {
     font-weight: normal;
     margin: 0;
     word-wrap: break-word;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 a {
     background-color: transparent;
@@ -224,4 +229,204 @@ pre code:after,
 pre tt:before,
 pre tt:after {
     content: none;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #6f2dbd;
+    /* Couleur violette pour le texte */
+    position: relative;
+    padding: 0 20px;
+}
+
+.section-title h2:before,
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: #6f2dbd;
+    /* Couleur violette pour les traits */
+    top: 20%;
+}
+
+.section-title h2:before {
+    left: -1px;
+    transform: rotate(-45deg);
+}
+
+.section-title h2:after {
+    right: -1px;
+    transform: rotate(45deg);
+}
+
+/* Les petits traits obliques qui entourent le texte dans le h2 */
+.section-title h2 span:before,
+.section-title h2 span:after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: #6f2dbd;
+    /* Couleur violette pour les petits traits */
+    bottom: 10%;
+}
+
+.section-title h2 span:before {
+    left: -1px;
+    transform: rotate(45deg);
+}
+
+.section-title h2 span:after {
+    right: -1px;
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1280px) {
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #6f2dbd;
+        /* Couleur violette pour le texte */
+        position: relative;
+        padding: 0 15px;
+    }
+    .section-title h2:before,
+    .section-title h2:after {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les traits */
+        top: -10%;
+    }
+    .section-title h2:before {
+        left: -5px;
+        transform: rotate(-45deg);
+    }
+    .section-title h2:after {
+        right: -5px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:before,
+    .section-title h2 span:after {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les petits traits */
+        bottom: -5%;
+    }
+    .section-title h2 span:before {
+        left: -5px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:after {
+        right: -5px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-title h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #6f2dbd;
+        /* Couleur violette pour le texte */
+        position: relative;
+        padding: 0 10px;
+    }
+    .section-title h2:before,
+    .section-title h2:after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les traits */
+        top: -10%;
+    }
+    .section-title h2:before {
+        left: -5px;
+        transform: rotate(-45deg);
+    }
+    .section-title h2:after {
+        right: -5px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:before,
+    .section-title h2 span:after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les petits traits */
+        bottom: -5%;
+    }
+    .section-title h2 span:before {
+        left: -5px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:after {
+        right: -5px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #6f2dbd;
+        /* Couleur violette pour le texte */
+        position: relative;
+        padding: 0 10px;
+    }
+    .section-title h2:before,
+    .section-title h2:after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les traits */
+        top: -10%;
+    }
+    .section-title h2:before {
+        left: -1px;
+        transform: rotate(-45deg);
+    }
+    .section-title h2:after {
+        right: -1px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:before,
+    .section-title h2 span:after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: #6f2dbd;
+        /* Couleur violette pour les petits traits */
+        bottom: -5%;
+    }
+    .section-title h2 span:before {
+        left: -1px;
+        transform: rotate(45deg);
+    }
+    .section-title h2 span:after {
+        right: -1px;
+        transform: rotate(-45deg);
+    }
 }

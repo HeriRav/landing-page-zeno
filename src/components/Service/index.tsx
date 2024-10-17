@@ -30,15 +30,11 @@ const Service = () => {
 
     return (
         <main id="service" className="scroll-mt-28">
-            <div className="flex lg:mt-20 justify-center relative">
-                <hr className="absolute h-[0.1rem] bg-primary ml-[130px] md:ml-[190px] lg:ml-[230px] xl:ml-[270px] 2xl:ml-[350px] -mt-6 md:-mt-6 lg:-mt-4 xl:mt-0 2xl:mt-2 top-14 w-6 xl:w-8 -rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary mr-[130px] md:mr-[190px] lg:mr-[230px] xl:mr-[270px] 2xl:mr-[350px] -mt-6 md:-mt-6 lg:-mt-4 xl:mt-0 2xl:mt-2 top-14 w-6 xl:w-8 rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary ml-[130px] md:ml-[190px] lg:ml-[230px] xl:ml-[270px] 2xl:ml-[350px] md:mt-1 lg:mt-2 w-6 xl:w-8 rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary mr-[130px] md:mr-[190px] lg:mr-[230px] xl:mr-[270px] 2xl:mr-[350px] md:mt-1 lg:mt-2 w-6 xl:w-8 -rotate-45" />
-                <p className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Nos services</p>
+            <div className="section-title flex md:mt-20 justify-center relative" data-aos="fade-up">
+                <h2><span className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Nos services</span></h2>
             </div>
             <div className="flex flex-col xl:flex-row mt-20 justify-center items-center justify-items-center relative max-w-[1200px] mx-auto">
-                <div className="flex-initial m-2">
+                <div className="flex-initial m-2" data-aos="flip-left">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_1.png"} alt={"Image Services 1"}
@@ -57,7 +53,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-initial m-2">
+                <div className="flex-initial m-2" data-aos="flip-down">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_2.png"} alt={"Image Services 2"}
@@ -76,7 +72,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-initial m-2">
+                <div className="flex-initial m-2" data-aos="flip-right">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_3.png"} alt={"Image Services 3"}
@@ -96,7 +92,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <a className="flex justify-center mt-10 w-56 mx-auto text-xl cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-8 md:py-4 rounded-full hover:bg-yellow-300 transition delay-50 duration-200">
+            <a className="flex justify-center mt-10 w-56 mx-auto text-xl cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-8 md:py-4 rounded-full hover:bg-yellow-300 transition delay-50 duration-200" data-aos="fade-up" data-aos-offset="-150">
                 <Link to="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
             </a>
         </main>

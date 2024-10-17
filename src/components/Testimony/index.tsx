@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Testimony = () => {
@@ -17,24 +17,20 @@ const Testimony = () => {
 
     return (
         <main id='testimony' className='scroll-mt-28'>
-            <div className="flex lg:mt-20 justify-center relative mt-20 sm:mt-20 md:mt-20">
-                <hr className="absolute h-[0.1rem] bg-primary ml-[120px] md:ml-[190px] lg:ml-[230px] xl:ml-[320px] 2xl:ml-[380px] mt-7 md:mt-10 lg:mt-10 xl:mt-14 w-6 md:w-8 -rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary mr-[120px] md:mr-[190px] lg:mr-[230px] xl:mr-[320px] 2xl:mr-[380px] mt-7 md:mt-10 lg:mt-10 xl:mt-14 w-6 md:w-8 rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary ml-[120px] md:ml-[190px] lg:ml-[230px] xl:ml-[320px] 2xl:ml-[380px] w-6 md:w-8 rotate-45" />
-                <hr className="absolute h-[0.1rem] bg-primary mr-[120px] md:mr-[190px] lg:mr-[230px] xl:mr-[320px] 2xl:mr-[380px] w-6 md:w-8 -rotate-45" />
-                <p className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Témoignages</p>
+            <div className="section-title flex lg:mt-20 justify-center relative mt-20 sm:mt-20 md:mt-20" data-aos="fade-down">
+                <h2><span className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Témoignages</span></h2>
             </div>
             <div>
                 <StaticImage src={'../../images/svg/bg-testimony.svg'} alt={'Svg Témoignage'} 
-                    className='absolute right-0 top-0 -z-10 mt-8 md:-mt-24 lg:-mt-32 xl:-mt-36 2xl:-mt-40 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]'
+                    className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]'
                 />
             </div>
-            <div className='lg:grid lg:grid-cols-2 grid-rows-2 mt-20 gap-x-[30px] gap-y-[30px] lg:max-h-[1200px] z-10'>
-                <div className="flex flex-col lg:mr-0 lg:mt-0 mt-8 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row md:w-[620px] lg:w-full lg:max-w-xl max-w-[1200px] mx-auto">
-                    <div className="flex-shrink-0 mb-auto">
+            <div className='lg:grid xl:grid-cols-2 grid-rows-2 mt-20 gap-x-[30px] gap-y-[30px] lg:max-h-[1200px] z-10'>
+                <div className="flex flex-col xl:mr-0 lg:mt-0 mt-8 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                    <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_1.png'} alt={'Image témoignage 1'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
-                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left">
+                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left" data-aos="zoom-in">
                         <p className="lg:mb-2 text-xl font-bold tracking-tight text-purple-500">
                             {title_testimony_first}
                         </p>
@@ -43,11 +39,11 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col lg:ml-0 lg:mt-0 mt-8 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row md:w-[620px] lg:w-full lg:max-w-xl max-w-[1200px] mx-auto">
-                    <div className="flex-shrink-0 mb-auto">
+                <div className="flex flex-col xl:ml-0 lg:mt-0 mt-8 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                    <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_2.png'} alt={'Image témoignage 2'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
-                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left">
+                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left" data-aos="zoom-in">
                         <p className="mb-2 text-xl font-bold tracking-tight text-purple-500">
                             {title_testimony_second}
                         </p>
@@ -56,11 +52,11 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col lg:mr-0 mt-8 lg:mt-0 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row md:w-[620px] lg:w-full lg:max-w-xl max-w-[1200px] mx-auto">
-                    <div className="flex-shrink-0 mb-auto">
+                <div className="flex flex-col xl:mr-0 mt-8 lg:mt-0 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                    <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_3.png'} alt={'Image témoignage 3'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
-                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left">
+                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left" data-aos="zoom-in">
                         <p className="mb-2 text-xl font-bold tracking-tight text-purple-500">
                             {title_testimony_lorem}
                         </p>
@@ -69,11 +65,11 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col lg:ml-0 mt-8 lg:mt-0 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row md:w-[620px] lg:w-full lg:max-w-xl max-w-[1200px] mx-auto">
-                    <div className="flex-shrink-0 mb-auto">
+                <div className="flex flex-col xl:ml-0 mt-8 lg:mt-0 h-[300px] sm:h-[233px] p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                    <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_3.png'} alt={'Image témoignage 4'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
-                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left">
+                    <div className="flex flex-col p-4 leading-normal md:w-4/5 md:text-left" data-aos="zoom-in">
                         <p className="mb-2 text-xl font-bold tracking-tight text-purple-500">
                             {title_testimony_lorem}
                         </p>

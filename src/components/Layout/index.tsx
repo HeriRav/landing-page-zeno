@@ -19,23 +19,24 @@ const Layout = ({ children }: LayoutProps) => {
         }
       }
     }
-`)
+  `)
 
-return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-          style={{
-          marginTop: '30px',
-          }}
-      >
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
-    </>
-)
+  return (
+      <>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <div
+            style={{
+            marginTop: '30px',
+            }}
+            className="max-w-full"
+        >
+          <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
+      </>
+  )
 }
 
 export default Layout
