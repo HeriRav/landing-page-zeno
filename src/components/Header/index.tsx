@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container max-w-full flex items-center">
+      <div className="container fixed bg-white/80 py-3 max-w-full flex items-center">
         <div className="flex items-left text-left ml-8 mr-8 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
           <Link to="/">
             <StaticImage

@@ -16,7 +16,7 @@ const Contact = () => {
                         <span className='flex flex-col mt-28 text-right right-0 mr-8 lg:mr-16 xl:mr-20'>Un projet ?</span>
                         <span className='flex flex-col text-right right-0 mr-8 lg:mr-16 xl:mr-20'>Nous vous aidons</span>
                     </div>
-                    <form className="max-w-xl lg:max-w-md xl:max-w-lg 2xl:max-w-xl mr-auto mx-auto lg:ml-16 xl:ml-20 2xl:ml-20" data-aos="zoom-left">
+                    <form className="max-sm:px-4 max-w-xl lg:max-w-md xl:max-w-lg 2xl:max-w-xl mr-auto mx-auto lg:ml-16 xl:ml-20 2xl:ml-20" data-aos="zoom-left">
                         <div className="mb-2">
                             <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="Nom" required />
                         </div>
