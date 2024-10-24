@@ -74,7 +74,7 @@ const Contact = () => {
     };
 
     return (
-        <main id='contact' className='bg-gray-200 mt-20 scroll-mt-20'>
+        <main id='contact' className='relative bg-gray-200 mt-20 scroll-mt-20'>
             <div className='py-10 bg-secondary text-white text-center text-xl md:text-3xl/6 block lg:hidden' data-aos="fade-in">
                 <span className='flex flex-col'>Un projet ?</span>
                 <span className='flex flex-col'>Nous vous aidons</span>

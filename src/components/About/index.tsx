@@ -29,7 +29,7 @@ const About = () => {
   " Notre promesse : vous fournir des solutions sur mesure, répondant aux exigences les plus élevées tout en offrant un excellent rapport qualité/prix."
 
   return (
-    <main id="about" className="flex justify-center w-full about-main -mb-20 md:mb-10 scroll-mt-20">
+    <main id="about" className="relative flex justify-center w-full about-main -mb-20 md:mb-10 scroll-mt-20">
       <div className="absolute z-10 grid grid-rows-2 md:hidden gap-x-10 h-[500px]">
         <div className="flex flex-col ml-8 mr-8 space-y-2" data-aos="fade-right">
           <span className="text-white text-lg font-bold text-left mt-7">{left_title}</span>
