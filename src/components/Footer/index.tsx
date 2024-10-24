@@ -36,10 +36,10 @@ const Footer = () => {
                         Contact
                         </div>
                         <div className="text-xs md:text-base font-semibold">
-                        <MailOutlineIcon />&nbsp; contact@zeno-inno.com
+                        <MailOutlineIcon />&nbsp; <a href="mailto:contact@zeno-inno.com" className="hover:text-black/60">contact@zeno-inno.com</a>
                         </div>
                         <div className="text-xs md:text-base font-semibold">
-                        <AddIcCallIcon />&nbsp; +261 32 90 079 91
+                        <AddIcCallIcon />&nbsp; <a href="tel:+261 32 90 079 91" className="hover:text-black/60">+261 32 90 079 91</a>
                         </div>
                     </span>
                 </div>
@@ -52,10 +52,10 @@ const Footer = () => {
                     </span>
                 </div>
                 <div className="text-center sm:text-right md:mr-16 xl:mr-20 space-x-4">
-                    <a href="" target="_blank"><FacebookOutlined /></a>
-                    <a href="" target="_blank"><Instagram /></a>
-                    <a href="" target="_blank"><X /></a>
-                    <a href="https://www.linkedin.com/company/zeno-innovation/" target="_blank"><LinkedIn /></a>
+                    <a href="" target="_blank" className="hover:text-black/60"><FacebookOutlined /></a>
+                    <a href="" target="_blank" className="hover:text-black/60"><Instagram /></a>
+                    <a href="" target="_blank" className="hover:text-black/60"><X /></a>
+                    <a href="https://www.linkedin.com/company/zeno-innovation/" target="_blank" className="hover:text-black/60"><LinkedIn /></a>
                 </div>
             </div>
         </main>

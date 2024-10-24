@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import Loader from "../Common/loader";
 
 import Header from "../Header"
 import "./index.css"
@@ -11,6 +12,9 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+
+  const [loading, setLoading] = React.useState(true);
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,6 +24,15 @@ const Layout = ({ children }: LayoutProps) => {
       }
     }
   `)
+
+  React.useEffect(() => {
+    setTimeout(() => {
+        setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading)
+    return <Loader />;
 
   return (
       <>
