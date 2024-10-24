@@ -16,9 +16,14 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
+        popIn: {
+          "0%": { scale: 0 },
+          "100%": { scale: 1 },
+        },
       },
       animation: {
         fadeIn: "fadeIn 1s ease-in-out",
+        popIn: "popIn 0.3s ease-in-out",
       },
     },
   },
