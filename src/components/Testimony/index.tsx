@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import imgTestimony from "../../images/svg/bg-testimony.svg"
 
 const Testimony = () => {
 
@@ -21,9 +22,11 @@ const Testimony = () => {
                 <h2><span className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Témoignages</span></h2>
             </div>
             <div>
-                <StaticImage src={'../../images/svg/bg-testimony.svg'} alt={'Svg Témoignage'} 
+                {/* <StaticImage src={'../../images/svg/bg-testimony.svg'} alt={'Svg Témoignage'} 
                     className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]'
-                />
+                /> */}
+                <img src={imgTestimony} alt="Svg témoignage"
+                className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]' />
             </div>
             <div className='lg:grid xl:grid-cols-2 grid-rows-2 mt-20 gap-x-[30px] gap-y-[30px] lg:max-h-[1200px] z-10'>
                 <div className="flex flex-col xl:mr-0 lg:mt-0 mt-8 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">

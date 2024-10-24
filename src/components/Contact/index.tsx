@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { StaticImage } from 'gatsby-plugin-image'
 import Snackbar, { SnackbarCloseReason } from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
+import imgContact from "../../images/bg-contact.png"
 import "./index.css"
 
 const Contact = () => {
@@ -105,9 +106,11 @@ const Contact = () => {
                         <button type="submit" className={`btn-text font-bold text-white px-12 py-4 rounded-full  transition delay-75 duration-200 ${isChecked ? 'bg-primary cursor-pointer hover:bg-primary/80' : 'bg-gray-400 cursor-not-allowed'}`} onClick={sendEmail} disabled={!isChecked}>Envoyer</button>
                     </form>
                     <div className='hidden 2xl:grid'>
-                        <StaticImage src={'../../images/bg-contact.png'} alt={'Image Contact'}
+                        {/* <StaticImage src={'../../images/bg-contact.png'} alt={'Image Contact'}
                             className='absolute w-[575px] top-0 right-0 mr-[560px] 2xl:mr-[350px] bg-image'
-                        />
+                        /> */}
+                        <img src={imgContact} alt="Image contact"
+                        className='absolute w-[575px] top-0 right-0 mr-[560px] 2xl:mr-[350px] bg-image' />
                     </div>
                 </div>
             </div>
