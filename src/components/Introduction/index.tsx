@@ -33,12 +33,12 @@ const About = () => {
         <div className="absolute z-0 inset-y-0 left-0 -top-12">
           <StaticImage src={"../../images/svg/bg-intro_left.svg"} alt={"Svg 1"}
           placeholder="none"
-          className="hidden md:hidden lg:block lg:w-[80%] xl:block xl:w-[90%] 2xl:block 2xl:w-[100%]" />
+          className="hidden lg:block lg:w-[80%] xl:block xl:w-[90%] 2xl:block 2xl:w-[100%]" />
         </div>
         <div className="absolute z-0 inset-y-0 right-0 -top-12 md:-top-24">
           <StaticImage src={"../../images/svg/bg-intro_right.svg"} alt={"Svg 2"}
           placeholder="none"
-          className="hidden md:hidden lg:block lg:w-[580px] xl:block xl:w-[600px] 2xl:block 2xl:w-auto right-0" />
+          className="hidden lg:block lg:w-[580px] xl:block xl:w-[600px] 2xl:block 2xl:w-auto right-0" />
         </div>
       </div>
     </main>

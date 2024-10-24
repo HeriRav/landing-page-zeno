@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import imgAbout from "../../images/svg/bg-about.svg"
 import "./index.css"
 
 const scrollToSection = (id: string) => {
@@ -71,7 +72,10 @@ const About = () => {
           quality={100}
           className="background-3 invisible md:visible h-[500px] md:h-[400px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] w-full z-0"
       />
-      <StaticImage src={"../../images/svg/bg-about.svg"} alt={"Image Svg"}
+      {/* <StaticImage src={"../../images/svg/bg-about.svg"} alt={"Image Svg"}
+          className="absolute hidden md:block z-50 right-0 w-[50px] md:w-[80px] lg:w-[140px] xl:w-[160px] 2xl:w-[180px] mr-2 mt-6 md:mr-2 md:mt-2 lg:mr-24 lg:mt-6 xl:mr-20 xl:mt-6 2xl:mr-20 2xl:mt-8"
+      /> */}
+      <img src={imgAbout} alt="Image à propos"
           className="absolute hidden md:block z-50 right-0 w-[50px] md:w-[80px] lg:w-[140px] xl:w-[160px] 2xl:w-[180px] mr-2 mt-6 md:mr-2 md:mt-2 lg:mr-24 lg:mt-6 xl:mr-20 xl:mt-6 2xl:mr-20 2xl:mt-8"
       />
     </main>
