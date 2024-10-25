@@ -41,7 +41,7 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col mr-8 ml-8 space-y-2" data-aos="fade-left">
-          <span className="text-white text-lg font-bold text-right mt-7">{right_title}</span>
+          <span className="text-white text-lg font-bold text-right mt-2">{right_title}</span>
           <span className="text-white text-xs font-semibold text-right ml-auto">{right_description}</span>
         </div>
       </div>
@@ -59,7 +59,7 @@ const About = () => {
           <span className="text-white text-xs md:text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold text-right lg:w-5/6 ml-auto">{right_description}</span>
         </div>
       </div>
-      <a className="absolute bottom-2 md:bottom-8 z-10 text-xl font-bold cursor-pointer text-black bg-secondary px-8 py-2 lg:px-12 lg:py-4 rounded-full hover:bg-yellow-300 transition delay-75 duration-200" data-aos="fade-up" data-aos-offset="-150">
+      <a className="absolute bottom-4 md:bottom-8 z-10 text-xl font-bold cursor-pointer text-black bg-secondary px-8 py-2 lg:px-12 lg:py-4 rounded-full hover:bg-yellow-300 transition delay-75 duration-200" data-aos="fade-up" data-aos-offset="-150">
           <Link to="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
       </a>
       <div className="text-white background-1 h-[500px] md:h-[400px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]" data-aos="fade-left">

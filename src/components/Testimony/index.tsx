@@ -28,8 +28,8 @@ const Testimony = () => {
                 <img src={imgTestimony} alt="Svg témoignage"
                 className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]' />
             </div>
-            <div className='lg:grid xl:grid-cols-2 grid-rows-2 mt-20 gap-x-[30px] gap-y-[30px] lg:max-h-[1200px] z-10'>
-                <div className="flex flex-col xl:mr-0 lg:mt-0 mt-8 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+            <div className='lg:grid xl:grid-cols-2 grid-rows-2 mt-20 gap-x-[30px] gap-y-[30px] z-10'>
+                <div className="flex flex-col xl:mr-0 lg:mt-0 mt-8 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[87%] sm:w-[575px] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
                     <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_1.png'} alt={'Image témoignage 1'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
@@ -42,7 +42,7 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col xl:ml-0 lg:mt-0 mt-8 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                <div className="flex flex-col xl:ml-0 lg:mt-0 mt-8 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[87%] sm:w-[575px] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
                     <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_2.png'} alt={'Image témoignage 2'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
@@ -55,7 +55,7 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col xl:mr-0 mt-8 lg:mt-0 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                <div className="flex flex-col xl:mr-0 mt-8 lg:mt-0 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[87%] sm:w-[575px] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
                     <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_3.png'} alt={'Image témoignage 3'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>
@@ -68,7 +68,7 @@ const Testimony = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col xl:ml-0 mt-8 lg:mt-0 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[95%] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
+                <div className="flex flex-col xl:ml-0 mt-8 lg:mt-0 h-auto p-8 items-center bg-white border border-purple-500 rounded-3xl shadow md:flex-row w-[87%] sm:w-[575px] md:w-[620px] lg:w-full lg:max-w-[850px] xl:max-w-xl max-w-[1200px] mx-auto">
                     <div className="flex-shrink-0 mb-auto" data-aos="zoom-in">
                         <StaticImage src={'../../images/bg-testimony_3.png'} alt={'Image témoignage 4'} className="w-10 h-10 lg:w-20 lg:h-20 rounded-full" />
                     </div>

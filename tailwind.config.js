@@ -4,11 +4,6 @@ module.exports = {
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
-  purge: {
-    options: {
-      safelist: ['absolute', 'relative', 'top-0', 'left-0', 'right-0', 'bottom-0'],
-    },
-  },
   theme: {
     extend: {
       colors: {

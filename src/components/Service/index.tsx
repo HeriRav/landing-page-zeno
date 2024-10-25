@@ -34,7 +34,7 @@ const Service = () => {
                 <h2><span className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Nos services</span></h2>
             </div>
             <div className="flex flex-col xl:flex-row mt-20 justify-center items-center justify-items-center relative max-w-[1200px] mx-auto">
-                <div className="flex-initial m-2" data-aos="flip-left">
+                <div className="flex-initial m-2 max-md:ml-8 max-md:mr-8" data-aos="flip-left">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_1.png"} alt={"Image Services 1"}
@@ -43,7 +43,7 @@ const Service = () => {
                         </a>
                         <div className="p-5">
                             <a>
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-black">
+                                <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight dark:text-black">
                                     {title_services_first}
                                 </h5>
                             </a>
@@ -53,7 +53,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-initial m-2" data-aos="flip-down">
+                <div className="flex-initial m-2 max-md:ml-8 max-md:mr-8" data-aos="flip-down">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_2.png"} alt={"Image Services 2"}
@@ -62,7 +62,7 @@ const Service = () => {
                         </a>
                         <div className="p-5">
                             <a>
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-black">
+                                <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight dark:text-black">
                                     {title_services_second}
                                 </h5>
                             </a>
@@ -72,7 +72,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-initial m-2" data-aos="flip-right">
+                <div className="flex-initial m-2 max-md:ml-8 max-md:mr-8" data-aos="flip-right">
                     <div className="md:w-[620px] lg:w-[850px] xl:w-[385px] xl:h-[504px] shadow-2xl bg-white border border-gray-200 rounded-3xl dark:bg-white dark:border-white">
                         <a>
                             <StaticImage src={"../../images/bg-services_3.png"} alt={"Image Services 3"}
@@ -81,7 +81,7 @@ const Service = () => {
                         </a>
                         <div className="p-5">
                             <a>
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-black">
+                                <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight dark:text-black">
                                     {title_services_third}
                                 </h5>
                             </a>

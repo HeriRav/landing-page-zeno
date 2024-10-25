@@ -41,6 +41,7 @@ const Contact = () => {
                 setName('');
                 setTel('');
                 setEmail('');
+                setIsChecked(false);
             },
             (error) => {
                 console.log('FAILED...', error.text);
@@ -48,6 +49,7 @@ const Contact = () => {
                 setName('');
                 setTel('');
                 setEmail('');
+                setIsChecked(false);
             }
             );
         }
@@ -97,7 +99,7 @@ const Contact = () => {
                             <input type="email" id="email" name='user_email' value={email} onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="E-Mail*" required />
                         </div>
                         <div className="mb-2">
-                            <textarea rows={1} id="message" name='message' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full px-4 pb-12 pt-3" placeholder='Message' required />
+                            <textarea rows={1} id="message" name='message' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full px-4 pb-12 pt-3" placeholder='Message' />
                         </div>
                         <div className='mb-6'>
                             <input type="checkbox" id='condition' checked={isChecked} onChange={handleCheckboxChange} />
