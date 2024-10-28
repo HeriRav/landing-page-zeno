@@ -26,11 +26,11 @@ const BackToTopButton: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-1 right-1 xl:bottom-5 xl:right-5 z-50">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-4 bg-[#A855F7] text-black rounded-full shadow-2xl hover:bg-[#A855F7]/80 transition duration-300"
+          className="md:p-4 bg-[#A855F7] max-md:w-10 max-md:h-10 text-black rounded-full shadow-2xl hover:bg-[#A855F7]/80 transition-all duration-300 ease-linear"
         >
           <ArrowUpwardIcon />
         </button>

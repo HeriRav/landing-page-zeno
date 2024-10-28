@@ -59,7 +59,7 @@ const About = () => {
           <span className="text-white text-xs md:text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold text-right lg:w-5/6 ml-auto">{right_description}</span>
         </div>
       </div>
-      <a className="absolute bottom-4 md:bottom-8 z-10 text-xl font-bold cursor-pointer text-black bg-secondary px-8 py-2 lg:px-12 lg:py-4 rounded-full hover:bg-yellow-300 transition delay-75 duration-200" data-aos="fade-up" data-aos-offset="-150">
+      <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="absolute bottom-4 md:bottom-8 z-10 text-xl font-bold cursor-pointer text-black bg-secondary px-8 py-2 lg:px-12 lg:py-4 rounded-full hover:bg-yellow-300 transition-all duration-300 ease-linear" data-aos="fade-up" data-aos-offset="-150">
           <Link to="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
       </a>
       <div className="text-white background-1 h-[500px] md:h-[400px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]" data-aos="fade-left">
@@ -72,9 +72,6 @@ const About = () => {
           quality={100}
           className="background-3 invisible md:visible h-[500px] md:h-[400px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] w-full z-0"
       />
-      {/* <StaticImage src={"../../images/svg/bg-about.svg"} alt={"Image Svg"}
-          className="absolute hidden md:block z-50 right-0 w-[50px] md:w-[80px] lg:w-[140px] xl:w-[160px] 2xl:w-[180px] mr-2 mt-6 md:mr-2 md:mt-2 lg:mr-24 lg:mt-6 xl:mr-20 xl:mt-6 2xl:mr-20 2xl:mt-8"
-      /> */}
       <img src={imgAbout} alt="Image à propos"
           className="absolute hidden md:block z-50 right-0 w-[50px] md:w-[80px] lg:w-[140px] xl:w-[160px] 2xl:w-[180px] mr-2 mt-6 md:mr-2 md:mt-2 lg:mr-24 lg:mt-6 xl:mr-20 xl:mt-6 2xl:mr-20 2xl:mt-8"
       />

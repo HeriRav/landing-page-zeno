@@ -46,12 +46,12 @@ const Footer = () => {
             </div>
             <hr className="w-[90%] mx-auto my-auto bg-primary" />
             <div className="grid grid-cols-2 py-10">
-                <div className="text-center sm:text-left md:ml-16 xl:ml-20">
+                <div className="text-center sm:text-left sm:ml-16 md:ml-16 xl:ml-20">
                     <span>
                         © {new Date().getFullYear()}, All right reserved.
                     </span>
                 </div>
-                <div className="text-center sm:text-right md:mr-16 xl:mr-20 space-x-4">
+                <div className="text-center sm:text-right sm:mr-16 md:mr-16 xl:mr-20 space-x-4">
                     <a href="" target="_blank" className="hover:text-black/60"><FacebookOutlined /></a>
                     <a href="" target="_blank" className="hover:text-black/60"><Instagram /></a>
                     <a href="" target="_blank" className="hover:text-black/60"><X /></a>

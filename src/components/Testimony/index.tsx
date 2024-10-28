@@ -22,9 +22,6 @@ const Testimony = () => {
                 <h2><span className="text-center text-primary font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Témoignages</span></h2>
             </div>
             <div>
-                {/* <StaticImage src={'../../images/svg/bg-testimony.svg'} alt={'Svg Témoignage'} 
-                    className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]'
-                /> */}
                 <img src={imgTestimony} alt="Svg témoignage"
                 className='absolute right-0 top-0 -z-10 mt-8 md:-mt-20 lg:-mt-24 xl:-mt-28 2xl:-mt-32 w-[340px] md:w-[280px] lg:w-[320px] xl:w-[400px] 2xl:w-[440px]' />
             </div>

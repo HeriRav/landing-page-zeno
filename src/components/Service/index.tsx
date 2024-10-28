@@ -92,7 +92,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <a className="flex justify-center mt-10 w-56 mx-auto text-xl cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-8 md:py-4 rounded-full hover:bg-yellow-300 transition delay-75 duration-200" data-aos="fade-up" data-aos-offset="-150">
+            <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="flex justify-center mt-10 w-56 mx-auto text-xl cursor-pointer right-button text-black bg-secondary px-8 py-2 md:px-8 md:py-4 rounded-full hover:bg-yellow-300 transition-all duration-300 ease-linear" data-aos="fade-up" data-aos-offset="-150">
                 <Link to="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
             </a>
         </main>

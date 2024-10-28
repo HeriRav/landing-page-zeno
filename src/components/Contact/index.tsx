@@ -1,6 +1,5 @@
 import React, {FormEvent, useRef, useState} from 'react'
 import emailjs from '@emailjs/browser';
-import { StaticImage } from 'gatsby-plugin-image'
 import Snackbar, { SnackbarCloseReason } from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import imgContact from "../../images/bg-contact.png"
@@ -8,23 +7,39 @@ import "./index.css"
 
 const Contact = () => {
 
-    const [name, setName] = useState('');
-    const [tel, setTel] = useState('');
-    const [email, setEmail] = useState('');
+    const [formData, setFormData] = useState({
+        user_name: '',
+        user_tel: '',
+        user_email: '',
+        message: ''
+    });
     const [isChecked, setIsChecked] = useState(false);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const form = useRef<HTMLFormElement>(null);
 
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: value,
+        }));
+    };
+
+    const isFormValid = (): boolean => {
+        const { user_name, user_tel, user_email, message } = formData;
+        return user_name.trim() !== '' && user_tel.trim() !== '' && user_email.trim() !== '' && message.trim() !== '' && isChecked;
+    };
+
     const sendEmail = (e: FormEvent) => {
         e.preventDefault();
 
-        if (!name || !tel || !email) {
-            console.error("Saisies manquantes");
+        if (!formData) {
+            console.error("Saisie(s) manquante(s)");
             setOpenNull(true);
             return;
         }
 
-        if (!emailRegex.test(email)) {
+        if (!emailRegex.test(formData.user_email)) {
             console.error("Format d'email invalide");
             setOpenEmail(true);
             return;
@@ -38,17 +53,13 @@ const Contact = () => {
                 setOpen(true);
                 console.log('SUCCESS!');
                 form.current?.reset();
-                setName('');
-                setTel('');
-                setEmail('');
+                setFormData({ user_name: '', user_email: '', user_tel: '', message: '' });
                 setIsChecked(false);
             },
             (error) => {
                 console.log('FAILED...', error.text);
                 form.current?.reset();
-                setName('');
-                setTel('');
-                setEmail('');
+                setFormData({ user_name: '', user_email: '', user_tel: '', message: '' });
                 setIsChecked(false);
             }
             );
@@ -90,27 +101,24 @@ const Contact = () => {
                     </div>
                     <form className="max-sm:px-4 max-w-xl lg:max-w-md xl:max-w-lg 2xl:max-w-xl mr-auto mx-auto lg:ml-16 xl:ml-20 2xl:ml-20" data-aos="zoom-left" ref={form}>
                         <div className="mb-2">
-                            <input type="text" id="name" name='user_name' value={name} onChange={(e) => setName(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="Nom*" required />
+                            <input type="text" id="name" name='user_name' value={formData.user_name} onChange={handleInputChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="Nom*" required />
                         </div>
                         <div className="mb-2">
-                            <input type="tel" id="tel" name='user_tel' value={tel} onChange={(e) => setTel(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="Tel*" required />
+                            <input type="tel" id="tel" name='user_tel' value={formData.user_tel} onChange={handleInputChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="Tel*" required />
                         </div>
                         <div className="mb-2">
-                            <input type="email" id="email" name='user_email' value={email} onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="E-Mail*" required />
+                            <input type="email" id="email" name='user_email' value={formData.user_email} onChange={handleInputChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-4" placeholder="E-Mail*" required />
                         </div>
                         <div className="mb-2">
-                            <textarea rows={1} id="message" name='message' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full px-4 pb-12 pt-3" placeholder='Message' />
+                            <textarea rows={1} id="message" name='message' value={formData.message} onChange={handleInputChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full px-4 pb-12 pt-3" placeholder='Message*' />
                         </div>
                         <div className='mb-6'>
                             <input type="checkbox" id='condition' checked={isChecked} onChange={handleCheckboxChange} />
                             <label htmlFor="condition" className='text-sm'>&nbsp;En cliquant sur ce bouton, vous acceptez les termes et conditions</label>
                         </div>
-                        <button type="submit" className={`btn-text font-bold text-white px-12 py-4 rounded-full  transition delay-75 duration-200 ${isChecked ? 'bg-primary cursor-pointer hover:bg-primary/80' : 'bg-gray-400 cursor-not-allowed'}`} onClick={sendEmail} disabled={!isChecked}>Envoyer</button>
+                        <button type="submit" className={`btn-text font-bold text-white px-12 py-4 rounded-full  transition-all duration-200 ease-linear ${isFormValid() ? 'bg-primary cursor-pointer hover:bg-primary/80' : 'bg-gray-400 cursor-not-allowed'}`} onClick={sendEmail} disabled={!isFormValid()}>Envoyer</button>
                     </form>
                     <div className='hidden 2xl:grid'>
-                        {/* <StaticImage src={'../../images/bg-contact.png'} alt={'Image Contact'}
-                            className='absolute w-[575px] top-0 right-0 mr-[560px] 2xl:mr-[350px] bg-image'
-                        /> */}
                         <img src={imgContact} alt="Image contact"
                         className='absolute w-[575px] top-0 right-0 mr-[560px] 2xl:mr-[350px] bg-image' />
                     </div>

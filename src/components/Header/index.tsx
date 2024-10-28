@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                 <a className="block text-black py-2">
                   <Link to="#testimony" onClick={closeMenu} onClickCapture={(e) => handleScroll(e, 'testimony')}>Témoignages</Link>
                 </a>
-                <a className="block text-white bg-purple-600 px-4 py-2 rounded-full">
+                <a href='#contact' onClick={closeMenu} onClickCapture={(e) => handleScroll(e, 'contact')} className="block text-white bg-purple-600 px-4 py-2 rounded-full">
                   <Link to="#contact" onClick={closeMenu} onClickCapture={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
                 </a>
               </nav>
@@ -141,7 +141,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             </a>
           </div>
           <div className="ml-auto mr-20">
-            <a className="text-sm text-white cursor-pointer bg-primary px-4 py-3 rounded-full hover:bg-purple-600 transition delay-75 duration-200">
+            <a href='#contact' onClick={(e) => handleScroll(e, 'contact')} className="text-sm text-white cursor-pointer bg-primary px-4 py-3 rounded-full hover:bg-purple-600 transition-all duration-200 ease-linear">
               <Link to="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contactez nous</Link>
             </a>
           </div>
